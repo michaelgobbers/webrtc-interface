@@ -90,6 +90,10 @@ abstract class MediaStreamTrack {
     throw UnimplementedError();
   }
 
+  void setAudioInputDevice(String deviceId) {
+    throw UnimplementedError();
+  }
+
   Future<ByteBuffer> captureFrame() {
     throw UnimplementedError();
   }
