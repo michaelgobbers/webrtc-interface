@@ -109,6 +109,9 @@ abstract class MediaDevices {
   /// Returns a List of [MediaDeviceInfo] describing the devices.
   Future<List<MediaDeviceInfo>> enumerateDevices();
 
+  /// Returns the currently selected input device.
+  Future<MediaDeviceInfo> getCurrentInputDevice();
+
   /// Returns [MediaTrackSupportedConstraints] recognized by a User Agent for
   /// controlling the Capabilities of a [MediaStreamTrack] object.
   MediaTrackSupportedConstraints getSupportedConstraints() {
